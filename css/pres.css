@@ -1,0 +1,304 @@
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  /* Mon image est trop grosse et flou*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1b1b1b;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #efefef; /* Couleur du texte */
+}
+
+::selection {
+  background-color: violet;
+  color: #1b1b1b;
+}
+
+nav {
+  width: 100%;
+  background-color: #0b0b0b;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  overflow: hidden;
+}
+
+nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 140vw;
+}
+
+nav li {
+  margin: 0;
+  float: left;
+  display: inline-block;
+  height: 98px;
+  margin-bottom: 2px;
+  line-height: 100px;
+  width: 20vw;
+  text-align: center;
+  color: #555;
+  transition: background-color 0.5s 0.2s ease, color 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+  transform: translateY(100%);
+}
+
+nav li.active {
+  background-color: #151515;
+  color: #efefef;
+}
+
+nav li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: violet;
+}
+
+nav li:nth-child(1) {
+  animation: pop 0.5s 0.15s 1 forwards;
+}
+
+nav li:nth-child(2) {
+  animation: pop 0.5s 0.3s 1 forwards;
+}
+
+nav li:nth-child(3) {
+  animation: pop 0.5s 0.45s 1 forwards;
+}
+
+nav li:nth-child(4) {
+  animation: pop 0.5s 0.6s 1 forwards;
+}
+
+nav li:nth-child(5) {
+  animation: pop 0.5s 0.75s 1 forwards;
+}
+
+nav li:nth-child(6) {
+  animation: pop 0.5s 0.9s 1 forwards;
+}
+
+nav li:nth-child(7) {
+  animation: pop 0.5s 1.05s 1 forwards;
+}
+
+nav li:hover {
+  color: #ececec;
+}
+
+nav li:active {
+  background-color: #222;
+}
+
+nav li:nth-child(1):hover ~ .slide {
+  left: 0;
+}
+
+nav li:nth-child(2):hover ~ .slide {
+  left: 20vw;
+}
+
+nav li:nth-child(3):hover ~ .slide {
+  left: 40vw;
+}
+
+nav li:nth-child(4):hover ~ .slide {
+  left: 60vw;
+}
+
+nav li:nth-child(5):hover ~ .slide {
+  left: 80vw;
+}
+
+nav li:nth-child(6):hover ~ .slide {
+  left: 100vw;
+}
+
+nav li:nth-child(7):hover ~ .slide {
+  left: 120vw;
+}
+
+nav li.slide {
+  position: absolute;
+  left: -20vw;
+  top: 0;
+  background-color: #fff;
+  z-index: -1;
+  height: 2px;
+  margin-top: 98px;
+  transition: left 0.3s ease;
+  transform: translateY(0);
+}
+
+.competence {
+    display: inline-block;
+    margin-right: 10px; /* Espace entre chaque compétence */
+    margin-bottom: 10px; /* Espace en dessous de chaque compétence */
+    padding: 5px 10px; /* Espace à l'intérieur du carré */
+    background-color: #f0f0f0; /* Couleur de fond */
+    border: 1px solid #ccc; /* Bordure autour du carré */
+    border-radius: 5px; /* Bordure arrondie */
+    font-size: 14px; /* Taille de police */
+    color: #333; /* Couleur du texte */
+}
+
+
+/* Styles pour la section de présentation */
+.presentation-section {
+  padding: 100px 20px; /* Ajout d'un espace autour du contenu */
+  text-align: center;
+}
+
+.presentation-content {
+  max-width: 800px; /* Limiter la largeur du contenu pour une meilleure lisibilité */
+  margin: 0 auto; /* Centrer le contenu */
+}
+
+/* Styles pour les éléments de la section de présentation */
+.presentation-content h1 {
+  font-size: 36px; /* Taille de police plus grande pour le titre */
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.presentation-content p {
+  font-size: 18px; /* Taille de police légèrement plus grande pour le texte */
+  margin-bottom: 20px; /* Espacement sous les paragraphes */
+}
+
+.presentation-content ul {
+  list-style-type: none; /* Supprimer les puces de la liste */
+  padding: 0;
+}
+
+.presentation-content ul li {
+  font-size: 16px; /* Taille de police légèrement plus grande pour les éléments de liste */
+  margin-bottom: 10px; /* Espacement entre les éléments de liste */
+}
+
+
+
+/* Barre de progression */
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skill {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 100px; /* Taille du cercle de progression */
+  height: 100px; /* Taille du cercle de progression */
+  border-radius: 50%;
+  border: 10px solid #333; /* Couleur foncée pour le contour du cercle */
+  overflow: hidden; /* Cache le contenu dépassant du cercle */
+}
+
+
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6a0dad; /* Couleur de la progression */
+}
+
+
+.progress-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold; /* Ajoute cette ligne pour mettre le texte en gras */
+}
+
+/* Sélecteurs plus spécifiques pour les barres de progression */
+.progress-circle .progress.html-css {
+  width: 100%; /* Ajuste la barre de progression HTML/CSS à 80% */
+}
+
+.progress-circle .progress.javascript {
+  width: 80%; /* Ajuste la barre de progression JavaScript à 60% */
+}
+
+.progress-circle .progress.angularjs {
+  width: 70%; /* Ajuste la barre de progression AngularJS à 70% */
+}
+
+.progress-circle .progress.nodejs {
+  width: 80%; /* Ajuste la barre de progression Node.js à 90% */
+}
+
+
+.contact-icons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999; /* Assure-toi que les icônes restent au-dessus du contenu */
+}
+
+.contact-icons a {
+  margin-left: 10px; /* Espacement entre les icônes */
+  color: #fff; /* Couleur des icônes */
+  font-size: 20px; /* Taille des icônes */
+}
+
+.contact-icons a:hover {
+  color: #6a0dad; /* Couleur au survol des icônes */
+}
+
+
+
+
+
+
+/* Ajoutez vos styles pour le lien de téléchargement du CV */
+.cv-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #6a0dad; /* Changer la couleur du bouton en violet */
+  color: white; /* Changer la couleur du texte en blanc */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cv-link:hover {
+  background-color: #4f0685; /* Changer la couleur du bouton en violet foncé au survol */
+}
+/* Animations */
+@keyframes pop {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}

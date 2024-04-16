@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours - Louis Boucard</title>
+    <link rel="stylesheet" href="./css/parcours.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="slide"></li>
+        </ul>
+    </nav>
+    
+    <section class="parcours-section">
+        <h1>Parcours</h1>
+        <div class="parcours-cards">
+            <div class="parcours-card">
+                <h2> Étudiants Dev à EPSI Nantes</h2>
+                <p>Élève en developpement informatique à l'EPSI, je suis actuellement en deuxième année de Bachelor et de BTS SIO</p>
+            </div>
+            <div class="parcours-card">
+                <h2>À la recherche d'une alternance en dev sur Nantes et ses alentours à partir de Septembre 2024</h2>
+                <p></p>
+            </div>
+            <div class="parcours-card">
+                <h2> Étudiants Dev à EPSI Nantes</h2>
+                <p>Élève en developpement informatique à l'EPSI, je suis actuellement en deuxième année de Bachelor et de BTS SIO</p>
+            </div>
+            <div class="parcours-card">
+                <h2> Étudiants Dev à EPSI Nantes</h2>
+                <p>Élève en developpement informatique à l'EPSI, je suis actuellement en deuxième année de Bachelor et de BTS SIO</p>
+            </div>
+            <!-- Ajoutez plus de cartes pour chaque étape de votre parcours -->
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        (function($){
+            // variables
+            elementWidth = $('ul').width(),
+            containerWidth = $('nav').width(),
+            difference = elementWidth-containerWidth,
+            finalWidth = difference * 1.5,
+            element = $('ul');
+          
+            // active on click
+            $('li').on('click', function(){
+              $('li').removeClass('active');
+              $(this).addClass('active');
+            });
+          
+        })(jQuery);
+    </script>
+</body>
+</html>
