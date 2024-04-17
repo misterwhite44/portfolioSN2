@@ -173,6 +173,12 @@ nav li.slide {
   margin: 0 auto; /* Centrer le contenu */
 }
 
+.presentation-content p {
+  font-family: Copperplate;
+  font-size: 18px; /* Taille de police légèrement plus grande pour le texte */
+  margin-bottom: 20px; /* Espacement sous les paragraphes */
+}
+
 /* Styles pour les éléments de la section de présentation */
 .presentation-content h1 {
   font-size: 36px; /* Taille de police plus grande pour le titre */
