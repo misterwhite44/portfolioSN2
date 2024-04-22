@@ -232,7 +232,27 @@ a {
   header h1 {
     margin: 0;
   }
-  
+ 
+  .veille-btn {
+    background-color: #666;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block; /* Changer de "block" à "inline-block" */
+    padding: 5px 10px; /* Ajuster le rembourrage selon tes préférences */
+    text-align: center;
+    text-decoration: none;
+}
+
+.veille-btn:hover {
+    background-color: #777; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+.veille-btn:active {
+    background-color: #222; /* Couleur de fond au clic */
+}
+
+
   main {
     padding: 20px;
   }
