@@ -47,6 +47,16 @@
                   la gestion et la visualisation des retards,
                    tout en mettant en œuvre les fonctionnalités avancées de Symfony pour garantir
                     la sécurité et les performances du système.</p>
+                    <div class="logos">
+                    <img src="image/logo/symfony.jpeg" alt="Logo C++">
+                </div>
+                <a href="#" class="info-toggle">Plus d'info</a>
+                <div class="info" style="display:none;">
+                  <p>test test</p>
+                  <div class="additional-info">
+                    <!-- Contenu supplémentaire ici -->
+                  </div>
+                </div>
                     <a href="#">Lien vers le projet 1</a>
 
         </section>
@@ -63,7 +73,18 @@
                   mon jeu de survie offre une expérience palpitante où chaque décision compte pour rester en vie
                    dans un monde hostile. Ce projet m'a permis d'explorer les fonctionnalités avancées d'Unity 3D
                     et de développer mes compétences en conception de jeux."</p>
+                    <div class="logos">
+                      <img src="image/logo/symfony.jpeg" alt="Logo C++">
+                  </div>
+                  <a href="#project right" class="info-toggle">Plus d'info</a>
+                  <div class="info" style="display:none;">
+                    <p>test test</p>
+                    <div class="additional-info">
+                      <!-- Contenu supplémentaire ici -->
+                    </div>
+                  </div>
           <a href="#">Lien vers le projet 2</a>
+          
         </section>
         <section class="project left">
           <h2> Démineur en c++</h2>
@@ -75,8 +96,35 @@
                 J'ai également inclus des fonctionnalités telles que la génération aléatoire de cartes et une interface
                  utilisateur conviviale. Créer ce jeu démineur a été une expérience enrichissante qui m'a permis
                   de perfectionner mes compétences en C++ tout en m'amusant.</p>
+                  <div class="logos">
+                    <img src="image/logo/symfony.jpeg" alt="Logo C++">
+                </div>
+                <a href="#project left" class="info-toggle">Plus d'info</a>
+                <div class="info" style="display:none;">
+                  <p>Durée du projet : 1 mois
+                    <br>
+                    Technologies utilisées : C++, jetBrains
+                    <br>
+                    Compétences développées : Programmation orientée objet, algorithmique, interface utilisateur
+                    <br>
+                    Résultats : Jeu démineur fonctionnel et amusant
+                    </p>
+                  </p>
+                  
+                  <div class="additional-info">
+                    <!-- Contenu supplémentaire ici -->
+                  </div>
+                </div>
           <a href="#">Lien vers le projet 3</a>
         </section>
       </main>
+      <script>
+        $(document).ready(function(){
+          $('.info-toggle').click(function(){
+            $(this).next('.info').slideToggle();
+          });
+        });
+      </script>
+      
 
     </body>
