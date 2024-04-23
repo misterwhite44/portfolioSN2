@@ -284,20 +284,20 @@ nav li.slide {
 
 
 
-/* Ajoutez vos styles pour le lien de téléchargement du CV */
-.cv-link {
+.fichier-bts {
   display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  background-color: #6a0dad; /* Changer la couleur du bouton en violet */
-  color: white; /* Changer la couleur du texte en blanc */
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  margin-right: 30px; /* Espace entre chaque fichier */
+  margin-bottom: 30px; /* Espace en dessous de chaque fichier */
+  padding: 5px 10px; /* Espace à l'intérieur du carré */
+  background-color: #f0f0f0; /* Couleur de fond */
+  border: 1px solid #ccc; /* Bordure autour du carré */
+  border-radius: 20px; /* Bordure arrondie */
+  font-size: 17px; /* Taille de police */
+  color: #333; /* Couleur du texte */
 }
 
-.cv-link:hover {
-  background-color: #4f0685; /* Changer la couleur du bouton en violet foncé au survol */
+.fichier-bts:hover {
+  background-color: grey; /* Changer la couleur du bouton en violet foncé au survol */
 }
 /* Animations */
 @keyframes pop {
