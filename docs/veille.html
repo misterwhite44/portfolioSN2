@@ -31,12 +31,36 @@ a {
 .section-article {
     width: 48%; /* Largeur de chaque article */
     margin-bottom: 20px;
+    padding: 10px; /* Ajoute un espace autour du contenu */
+    border-radius: 10px; /* Ajoute des bords arrondis */
+    background-color: #888; /* Couleur de fond grise */
 }
 
+
 .section-article img {
-    width: 50%;
-    height: 50%;
+    width: 100%; /* Ajuster l'image à la largeur du conteneur */
+    height: auto; /* Ajuster la hauteur de manière proportionnelle */
 }
+
+.section-article a {
+    display: inline-block; /* Afficher les liens comme des blocs */
+    background-color: #666;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px; /* Ajouter un espace au-dessus du lien */
+    text-decoration: none;
+}
+
+.section-article a:hover {
+    background-color: #777; /* Couleur de fond au survol */
+}
+
+.section-article a:active {
+    background-color: #222; /* Couleur de fond au clic */
+}
+
+
 .btn {
     background-color: #666;
     border-radius: 5px;
@@ -115,38 +139,34 @@ a {
 
             <h1> Mes sources</h1>
 
-        <section>
-                <div class="articles-container">
-                    <!-- Première série d'articles -->
-                    <section class="section-article">  
-                        <img src="image/source1.webp" alt="Image article 1">                      
-                        <p>Intel dit adieu aux barrettes de mémoire vive avec ses processeurs Lunar Lake
-                         (https://www.lesnumeriques.com/cpu-processeur/guide-achat-quels-sont-les-meilleurs-processeurs-cpu-intel-g186245.html)
-                        </p>
-                       </section>
+            <section class="articles-container">
+                <!-- Première série d'articles -->
+                <section class="section-article">
+                    <a href="https://www.lesnumeriques.com/cpu-processeur/guide-achat-quels-sont-les-meilleurs-processeurs-cpu-intel-g186245.html">
+                        <img src="image/source1.webp" alt="Image article 1">
+                        <p>Intel dit adieu aux barrettes de mémoire vive avec ses processeurs Lunar Lake</p>
+                    </a>
+                </section>
             
-                    <section class="section-article">
+                <section class="section-article">
+                    <a href="https://www.clubic.com/memoire-pc-ram/">
                         <img src="image/source2.webp" alt="Image article 1">
-
-                        <p>Vers la fin de la RAM ? Intel va intégrer la mémoire dans ses processeurs (https://www.clubic.com/memoire-pc-ram/)                    
-                            </p>
-                        </section>
+                        <p>Vers la fin de la RAM ? Intel va intégrer la mémoire dans ses processeurs</p>
+                    </a>
+                </section>
             
-                    <section class="section-article">
+                <section class="section-article">
+                    <a href="https://www.intel.com/content/www/us/en/support/articles/000059234/memory-and-storage/ssd-management-tools.html">
                         <img src="image/source3.jpg" alt="Image article 1">
-
-                       <p>Intel pourrait supprimer la RAM de ses prochains processeurs (https://www.intel.com/content/www/us/en/support/articles/000059234/memory-and-storage/ssd-management-tools.html)                    
-                        </p>
-                       </section>
-            
-                    <section class="section-article">
-                        <!-- Contenu de la quatrième section d'article -->
-                    </section>
-            
-                    <!-- Deuxième série d'articles -->
-                    <section class="section-article">
-                        <!-- Contenu de la première section d'article de la deuxième série -->
-                    </section>
+                        <p>Intel pourrait supprimer la RAM de ses prochains processeurs</p>
+                    </a>
+                </section>
+                <section class="section-article">
+                    <a href="https://www.notebookcheck.biz/Test-d-Intel-Meteor-Lake-le-Core-Ultra-7-155H-ne-convainc-que-par-ses-performances-GPU.783887.0.html">
+                        <img src="image/source4.webp" alt="Image article 1">
+                        <p>Test d'Intel Meteor Lake : le Core Ultra 7 155H ne convainc que par ses performances GPU</p>
+                    </a>
+                </section>            
                 </section>
                 </div>
             </body>

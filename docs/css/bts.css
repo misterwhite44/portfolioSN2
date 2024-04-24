@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #666;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block; /* Changer de "block" à "inline-block" */
+    padding: 5px 10px; /* Ajuster le rembourrage selon tes préférences */
+    text-align: center;
+    text-decoration: none;
+    position: fixed; /* Positionner le bouton de manière absolue */
+    top: 10px; /* Définir la marge supérieure */
+    left: 10px; /* Définir la marge gauche */
+}
+
+.btn:hover {
+    background-color: #777; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+.btn:active {
+    background-color: #222; /* Couleur de fond au clic */
+}

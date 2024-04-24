@@ -145,6 +145,28 @@ nav li.slide {
     transform: translateY(0);
 }
 
+/* Nouveaux styles pour le bouton de présentation BTS */
+.presentation-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0b0b0b;
+    color: #efefef;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.presentation-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 /* Styles de la section de parcours */
 .parcours-section {
     color: #efefef;
