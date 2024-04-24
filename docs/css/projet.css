@@ -330,3 +330,10 @@ a {
   float: right; /* Aligne les logos à droite */
   margin-left: 10px; /* Ajoute un espace entre les logos et le texte */
 }
+
+.project .logosss img {
+  width: 10%; /* Ajustez la taille des logos selon vos préférences */
+  height: 10%; /* Permet de maintenir les proportions de l'image */
+  float: right; /* Aligne les logos à droite */
+  margin-left: 10px; /* Ajoute un espace entre les logos et le texte */
+}
